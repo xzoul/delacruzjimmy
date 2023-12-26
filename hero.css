@@ -143,6 +143,7 @@ nav.navbar {
   grid-gap: 16px;
   text-transform: none;
   text-decoration: none;
+  margin-left: 32px;
 }
 
 .hero-socials-container a {
@@ -175,12 +176,12 @@ nav.navbar {
   }
 
   .home-text {
-    font-size: 5.9vw;
-    margin-bottom: 40px;
+    font-size: 5.6vw;
   }
 
   .home-cta-btn-container {
     /* width: 250px; */
+    margin-top: 40px;
     width: 100%;
   }
   .hero-socials-icon {
@@ -203,7 +204,7 @@ nav.navbar {
   }
 
   .home-text {
-    font-size: 6.8vw;
+    font-size: 6.3vw;
   }
 
   .home-heading {
@@ -227,8 +228,10 @@ nav.navbar {
 
   .home-text {
     font-size: 5.6vw;
+  }
 
-    margin-bottom: 100px;
+  .home-cta-btn-container {
+    margin-top: 100px;
   }
 
   .home-cta-btn {
@@ -266,7 +269,6 @@ nav.navbar {
 
   .home-text {
     font-size: 5.5vw;
-    margin-bottom: 100px;
   }
 
   .home-cta-btn {
@@ -289,7 +291,10 @@ nav.navbar {
 
   .home-text {
     font-size: 5.5vw;
-    margin-bottom: 120px;
+  }
+
+  .home-cta-btn-container {
+    margin-top: 120px;
   }
 
   .home-cta-btn {
@@ -313,7 +318,10 @@ nav.navbar {
 
   .home-text {
     font-size: 5.8vw;
-    margin-bottom: 120px;
+  }
+
+  .home-cta-btn-container {
+    margin-top: 120px;
   }
 
   .hero-socials-container {
@@ -340,7 +348,10 @@ nav.navbar {
 
   .home-text {
     font-size: 80px;
-    margin-bottom: 150px;
+  }
+
+  .home-cta-btn-container {
+    margin-top: 150px;
   }
 
   .hero-socials-container {
