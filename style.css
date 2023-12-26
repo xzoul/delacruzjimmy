@@ -43,6 +43,7 @@
   --bg2: rgba(0, 51, 26, 0.032);
   --bg3: rgb(224, 224, 224);
   --lightmodetext: #283618;
+  --white: white;
 }
 
 .dark-mode {
@@ -52,6 +53,7 @@
   --bg2: #1f1f1f;
   --bg3: #292929;
   --lightmodetext: #f5f5f5;
+  --white: #171717;
 }
 
 body {

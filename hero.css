@@ -124,7 +124,7 @@ nav.navbar {
   font-family: Overpass;
   font-weight: 700;
   line-height: 1.55;
-  color: white;
+  color: var(--white);
   transition: 0.5s;
 }
 

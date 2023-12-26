@@ -79,17 +79,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const darkModeToggle = document.getElementById("dark-mode-toggle");
+  const darkModeToggleMobile = document.getElementById(
+    "dark-mode-toggle-mobile"
+  );
   const body = document.body;
   const sunIcon = document.getElementById("sunIcon");
   const moonIcon = document.getElementById("moonIcon");
+  const sunIconMobile = document.getElementById("sunIconMobile");
+  const moonIconMobile = document.getElementById("moonIconMobile");
 
   darkModeToggle.addEventListener("click", function () {
     body.classList.toggle("dark-mode");
     if (body.classList.contains("dark-mode")) {
       sunIcon.style.display = "block";
+      sunIconMobile.style.display = "block";
       moonIcon.style.display = "none";
+      moonIconMobile.style.display = "none";
     } else {
       sunIcon.style.display = "none";
+      sunIconMobile.style.display = "none";
+      moonIcon.style.display = "block";
+      moonIconMobile.style.display = "block";
+    }
+  });
+
+  darkModeToggleMobile.addEventListener("click", function () {
+    body.classList.toggle("dark-mode");
+    if (body.classList.contains("dark-mode")) {
+      sunIconMobile.style.display = "block";
+      sunIcon.style.display = "block";
+      moonIconMobile.style.display = "none";
+      moonIcon.style.display = "none";
+    } else {
+      sunIconMobile.style.display = "none";
+      sunIcon.style.display = "none";
+      moonIconMobile.style.display = "block";
       moonIcon.style.display = "block";
     }
   });

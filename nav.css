@@ -60,37 +60,42 @@
 
 .home-mode {
   /* border: 2px dashed rgba(120, 120, 120, 0.4); */
-  display: flex;
+  /* display: flex;
   align-items: flex-start;
-  flex-direction: row;
+  flex-direction: row; */
+  display: none;
 }
+
+.home-mode-mobile {
+  display: none;
+}
+
 .home-light-mode {
-  width: 24px;
-  height: 24px;
+  width: 100%;
+  height: 100%;
   display: none;
   align-self: center;
   fill: white;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-bottom: 4px;
 }
+
 .home-night-mode {
   fill: var(--dl-color-lightmode-text);
-  width: 24px;
-  height: 24px;
+  width: 100%;
+  height: 100%;
   align-self: center;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-bottom: 4px;
 }
-.home-light-mode1 {
-  fill: var(--lightmodetext);
-  width: 24px;
-  height: 24px;
-  display: none;
-  align-self: center;
-  fill: white;
+
+.home-light-mode:hover {
+  fill: var(--bg1);
 }
-.home-night-mode1 {
-  fill: var(--lightmodetext);
-  width: 24px;
-  height: 24px;
-  display: none;
-  align-self: center;
+.home-night-mode:hover {
+  fill: var(--bg1);
 }
 
 @media (min-width: 320px) {
@@ -103,16 +108,44 @@
   }
 
   .home-links-container.home-mobile {
-    display: flex;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0 16px 16px 16px;
+
+    grid-gap: 8px;
+    justify-items: center;
   }
 
   .home-navbar {
-    padding: 16px 16px 4px 16px;
+    /* padding: 16px 16px 4px 16px; */
     padding: 16px;
   }
 
   .home-home-mobile {
-    padding: 8px;
+    padding: 0;
+  }
+
+  .home-links-container.navbar-toggler {
+    border-color: green;
+  }
+
+  .home-mode {
+    display: none;
+  }
+
+  .home-mode-mobile {
+    display: flex;
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .home-light-mode {
+    margin-bottom: 4px;
+  }
+
+  .home-night-mode {
+    margin-bottom: 4px;
   }
 }
 @media (min-width: 375px) {
@@ -120,6 +153,11 @@
 @media (min-width: 425px) {
   .Navbar-Link {
     font-size: 3vw;
+  }
+
+  .home-mode-mobile {
+    width: 3vw;
+    height: 3vw;
   }
 }
 @media (min-width: 768px) {
@@ -146,6 +184,24 @@
   .Navbar-Link {
     font-size: 2vw;
   }
+
+  .home-mode {
+    display: flex;
+    width: 2vw;
+    height: 2vw;
+  }
+
+  .home-mode-mobile {
+    display: none;
+  }
+
+  .home-light-mode {
+    margin-bottom: 0;
+  }
+
+  .home-night-mode {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 991px) {
 }
@@ -153,11 +209,21 @@
   .Navbar-Link {
     font-size: 1.6vw;
   }
+
+  .home-mode {
+    width: 1.6vw;
+    height: 1.6vw;
+  }
 }
 @media (min-width: 1200px) {
 }
 @media (min-width: 1440px) {
   .Navbar-Link {
     font-size: 1.2vw;
+  }
+
+  .home-mode {
+    width: 1.2vw;
+    height: 1.2vw;
   }
 }
