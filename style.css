@@ -54,6 +54,9 @@
   --lightmodetext: #f5f5f5;
 }
 
+body {
+  background-color: var(--bg0);
+}
 .teleport-show {
   display: flex !important;
   transform: none !important;

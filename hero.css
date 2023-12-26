@@ -62,6 +62,19 @@
   overflow: hidden;
 }
 
+nav.navbar {
+  padding: 0;
+}
+.navbar-toggler {
+  padding: 4px !important;
+  margin: 0;
+  border: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
 /* Animation */
 .anim-typewriter {
   animation: typewriter 2s steps(22) 1s 1 normal both,
@@ -77,9 +90,19 @@
   letter-spacing: 2px;
   text-transform: none;
   text-decoration: none;
+  font-weight: bold;
 }
 .home-text003 {
   color: var(--bg1);
+}
+
+.home-text003.cursor a {
+  text-decoration: none;
+  text-transform: none;
+  color: var(--bg1);
+  font-family: "Kanit";
+  letter-spacing: 2px;
+  line-height: 1.55;
 }
 
 .home-cta-btn-container {
@@ -102,21 +125,40 @@
   font-weight: 700;
   line-height: 1.55;
   color: white;
+  transition: 0.5s;
 }
 
-.home-container01 {
-  display: flex;
+.home-cta-btn:hover {
+  background-color: var(--lightmodetext);
+}
+
+.hero-socials-container {
+  /* display: flex; */
   align-items: center;
   flex-direction: row;
-  justify-content: space-between;
-}
-.home-icon06 {
-  fill: var(--lightmodetext);
-  width: 36px;
-  height: 36px;
-  margin: var(--dl-space-space-unit);
+  justify-items: center;
+  /* justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  text-transform: none;
+  text-decoration: none;
 }
 
+.hero-socials-container a {
+  display: flex;
+}
+.hero-socials-icon {
+  fill: var(--lightmodetext);
+  /* width: 36px;
+  height: 36px;
+  margin: var(--dl-space-space-unit); */
+  transition: 0.5s;
+}
+
+.hero-socials-icon:hover {
+  fill: var(--bg1);
+}
 @media (min-width: 320px) {
   .home-cta-btn {
     font-size: 3vw;
@@ -125,6 +167,7 @@
   .home-hero {
     justify-content: center;
     min-height: 300px;
+    /* min-height: 100vh; */
   }
 
   .home-heading {
@@ -132,18 +175,27 @@
   }
 
   .home-text {
-    font-size: 7vw;
+    font-size: 5.9vw;
+    margin-bottom: 40px;
   }
 
   .home-cta-btn-container {
-    width: 280px;
+    /* width: 250px; */
+    width: 100%;
+  }
+  .hero-socials-icon {
+    width: 20px;
+    height: 20px;
   }
 }
 @media (min-width: 375px) {
 }
 @media (min-width: 425px) {
+  .home-hero {
+    min-height: 350px;
+  }
   .home-cta-btn {
-    font-size: 10px;
+    font-size: 3.8vw;
   }
 
   .home-hero-text-container {
@@ -151,29 +203,45 @@
   }
 
   .home-text {
-    font-size: 20px;
-  }
-
-  .home-icon06 {
-    width: 16px;
-    height: 16px;
+    font-size: 6.8vw;
   }
 
   .home-heading {
-    font-size: 12px;
+    font-size: 3.8vw;
+  }
+
+  .home-cta-btn {
+    font-size: 4vw;
+    /* padding: 0.3rem 0.6rem; */
+  }
+
+  .hero-socials-icon {
+    width: 32px;
+    height: 32px;
   }
 }
 @media (min-width: 768px) {
-  .home-text {
-    font-size: 56px;
+  .home-hero {
+    min-height: 450px;
   }
 
-  .home-heading {
-    font-size: 26px;
+  .home-text {
+    font-size: 5.6vw;
+
+    margin-bottom: 100px;
+  }
+
+  .home-cta-btn {
+    font-size: 2.4vw;
+  }
+
+  .hero-socials-icon {
+    width: 40px;
+    height: 40px;
   }
 }
 @media (min-width: 991px) {
-  .home-hero1 {
+  /* .home-hero1 {
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -187,11 +255,95 @@
 
   .home-cta-btn-container {
     min-width: 100%;
+  } */
+  .home-hero {
+    min-height: 550px;
+  }
+
+  .home-heading {
+    font-size: 3vw;
+  }
+
+  .home-text {
+    font-size: 5.5vw;
+    margin-bottom: 100px;
+  }
+
+  .home-cta-btn {
+    font-size: 3vw;
+  }
+
+  .hero-socials-icon {
+    width: 48px;
+    height: 48px;
   }
 }
 @media (min-width: 1024px) {
+  .home-hero {
+    min-height: 600px;
+  }
+
+  .home-heading {
+    font-size: 3.5vw;
+  }
+
+  .home-text {
+    font-size: 5.5vw;
+    margin-bottom: 120px;
+  }
+
+  .home-cta-btn {
+    font-size: 3vw;
+    padding: 8px 16px;
+  }
+
+  .hero-socials-icon {
+    width: 52px;
+    height: 52px;
+  }
 }
 @media (min-width: 1200px) {
+  .home-hero {
+    min-height: 650px;
+  }
+
+  .home-heading {
+    font-size: 3vw;
+  }
+
+  .home-text {
+    font-size: 5.8vw;
+    margin-bottom: 120px;
+  }
+
+  .hero-socials-container {
+    grid-gap: 32px;
+  }
+
+  .home-cta-btn {
+    font-size: 32px;
+  }
+
+  .hero-socials-icon {
+    width: 56px;
+    height: 56px;
+  }
 }
 @media (min-width: 1440px) {
+  .home-hero {
+    min-height: 700px;
+  }
+
+  .home-heading {
+    font-size: 44px;
+  }
+
+  .home-text {
+    font-size: 80px;
+    margin-bottom: 150px;
+  }
+
+  .hero-socials-container {
+    grid-gap: 48px;
+  }
 }
