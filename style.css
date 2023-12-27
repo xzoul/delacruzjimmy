@@ -56,9 +56,6 @@
   --white: #171717;
 }
 
-body {
-  background-color: var(--bg0);
-}
 .teleport-show {
   display: flex !important;
   transform: none !important;

@@ -1,16 +1,115 @@
+.home-container11 {
+  width: 100%;
+  display: grid;
+  max-width: 1400px;
+  margin-top: 40px;
+}
+
+.home-text-es {
+  color: var(--lightmodetext);
+  font-family: "Kanit";
+  line-height: 1.55;
+  letter-spacing: 2px;
+  text-transform: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.experience-techstacks-cont {
+  display: flex;
+  grid-gap: var(--dl-space-space-doubleunit);
+  flex-wrap: wrap;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.experience-container {
+  display: flex;
+  box-shadow: 5px 5px 10px 0px var(--boxshadowcolor);
+  align-items: flex-start;
+  border-color: var(--dl-color-gray-800);
+  border-width: 1px;
+  border-radius: 16px;
+  margin-bottom: var(--dl-space-space-tripleunit);
+  margin-top: var(--dl-space-space-tripleunit);
+  flex-direction: column;
+  background-color: var(--bg2);
+}
+
+.home-experience1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media (min-width: 320px) {
+  .home-experience1 {
+    padding: 16px;
+  }
+
+  .experience-container {
+    padding: 16px;
+  }
+  .home-text-es {
+    font-size: 6vw;
+  }
+
+  .experience-techstacks-cont {
+    padding-top: 16px;
+  }
+
+  .home-container21 {
+    margin-top: 64px;
+  }
 }
 @media (min-width: 375px) {
+  .home-container11 {
+    /* width: 80%; */
+    grid-template-columns: 1fr;
+  }
 }
 @media (min-width: 425px) {
+  .experience-container {
+    margin: 16px;
+  }
 }
 @media (min-width: 768px) {
+  .home-container11 {
+    width: 80%;
+  }
+  .experience-container {
+    padding: 32px;
+  }
+  .experience-techstacks-cont {
+    padding-top: 32px;
+  }
 }
 @media (min-width: 991px) {
 }
 @media (min-width: 1024px) {
+  .home-container11 {
+    width: 100%;
+    grid-gap: var(--dl-space-space-fiveunits);
+    grid-template-columns: 1fr 1fr;
+  }
+  .home-text-es {
+    font-size: 3.9vw;
+  }
+  .home-container21 {
+    margin-top: 0;
+  }
 }
 @media (min-width: 1200px) {
+  .home-text-es {
+    font-size: 3.9vw;
+  }
 }
 @media (min-width: 1440px) {
+  .home-text-es {
+    font-size: 56px;
+  }
 }

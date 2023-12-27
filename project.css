@@ -255,19 +255,19 @@
 }
 @media (min-width: 1440px) {
   .project-title {
-    font-size: 1.7vw;
+    font-size: 24px;
   }
   .project-subtitle {
-    font-size: 1.3vw;
+    font-size: 18px;
   }
 
   .project-details {
-    font-size: 1.1vw;
+    font-size: 16px;
   }
   .home-image {
     height: 400px;
   }
   .techstack {
-    font-size: 0.8vw;
+    font-size: 12px;
   }
 }
