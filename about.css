@@ -1,4 +1,67 @@
+.home-container28 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-container31 {
+  display: flex;
+  padding: var(--dl-space-space-doubleunit);
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.contacts-container {
+  display: flex;
+  padding: 16px;
+  flex-direction: row;
+}
+
+.home-container25 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-cont {
+  display: flex;
+  align-self: stretch;
+  box-shadow: 5px 5px 10px 0px var(--boxshadowcolor);
+  border-color: var(--dl-color-gray-800);
+  border-width: 1px;
+  border-radius: 16px;
+  flex-direction: column;
+  background-color: var(--bg2);
+  padding: 16px;
+  margin: 16px;
+}
+
+.contact-title {
+  color: var(--lightmodetext);
+  font-family: "Kanit";
+}
+
+.contact-subtitle {
+  color: var(--lightmodetext);
+  font-family: "Source Code Pro";
+}
+
 @media (min-width: 320px) {
+  .home-container28 {
+    padding: 16px;
+  }
+  .home-container31 {
+    flex-direction: column;
+  }
+
+  .contact-title {
+    font-size: 2vw;
+  }
+
+  .contact-subtitle {
+    font-size: 1.5vw;
+  }
 }
 @media (min-width: 375px) {
 }
@@ -9,6 +72,14 @@
 @media (min-width: 991px) {
 }
 @media (min-width: 1024px) {
+  .home-container31 {
+    flex-direction: row;
+  }
+  .home-container25 {
+    padding-top: var(--dl-space-space-fourunits);
+    padding-left: var(--dl-space-space-fourunits);
+    padding-right: var(--dl-space-space-fourunits);
+  }
 }
 @media (min-width: 1200px) {
 }

@@ -836,14 +836,7 @@
   text-align: center;
   font-family: "Source Code Pro";
 }
-.home-container25 {
-  display: flex;
-  align-items: center;
-  padding-top: var(--dl-space-space-fourunits);
-  padding-left: var(--dl-space-space-fourunits);
-  padding-right: var(--dl-space-space-fourunits);
-  flex-direction: column;
-}
+
 .home-text092 {
   color: var(--lightmodetext);
   font-size: 48px;
@@ -876,12 +869,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.home-container28 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 .home-testimonial {
   display: flex;
   align-items: center;
@@ -956,12 +944,7 @@
   margin: var(--dl-space-space-doubleunit);
   align-self: flex-end;
 }
-.home-container31 {
-  display: flex;
-  padding: var(--dl-space-space-doubleunit);
-  align-items: flex-end;
-  flex-direction: row;
-}
+
 .home-container32 {
   margin: var(--dl-space-space-unit);
   display: flex;
@@ -1314,7 +1297,8 @@
     margin-bottom: 0px;
   }
   .home-text096 {
-    width: 250px;
+    /* width: 250px; */
+    width: 100%;
     padding: 0;
     font-size: 12px;
   }
